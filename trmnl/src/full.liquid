@@ -1,0 +1,21 @@
+<div class="layout layout--col gap">
+  {% if IDX_0.image %}
+    <div class="item">
+      <img class="image image-cover image-dither rounded" src="{{ trml.plugin_settings.custom_fields_values.url }}{{ IDX_0.image }}" />
+    </div>
+  {% endif %}
+  <div class="item">
+    <div class="content">
+      <span class="value value--medium">{{ IDX_0.title }}</span>
+    </div>
+    <div class="meta">
+      {% if IDX_0.date %}<span class="label">{{ IDX_0.date | date: "%b %d, %Y" }}</span>{% endif %}
+      {% if IDX_0.make or IDX_0.model %}<span class="label">{{ IDX_0.make }} {{ IDX_0.model }}</span>{% endif %}
+      {% if IDX_0.city %}<span class="label">{{ IDX_0.city }}</span>{% endif %}
+      {% if IDX_0.country %}<span class="label">{{ IDX_0.country }}</span>{% endif %}
+    </div>
+  </div>
+  <div class="title_bar">
+    <span class="title">Photo of the Day</span>
+  </div>
+</div>
