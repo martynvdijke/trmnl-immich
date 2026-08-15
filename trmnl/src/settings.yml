@@ -2,12 +2,12 @@ strategy: polling
 no_screen_padding: 'no'
 dark_mode: 'no'
 static_data: ''
-polling_verb: get
+polling_verb: post
 framework_version: 2.3.7
-serverless_language: ''
-polling_url: "{{url}}/api/trmnl/photo-of-the-day?album_id={{album_id}}&person_id={{person_id}}"
-polling_headers: ''
-polling_body: ''
+serverless_language: python
+polling_url: "{{url}}/api/search/random"
+polling_headers: 'x-api-key={{api_key}}'
+polling_body: '{"size":1,"albumIds":{{album_id}},"personIds":{{person_id}}}'
 id: ''
 oauth_enabled: 'false'
 oauth_pkce_enabled: 'no'
@@ -31,23 +31,29 @@ oauth_expiry_strategy: ''
 oauth_fixed_expiry_ms: ''
 custom_fields:
   - keyname: url
-    name: 'Address of the trmnl-immich backend'
+    name: 'Address of the Immich server'
     field_type: url
-    description: 'The public URL of your trmnl-immich backend'
+    description: 'The base URL of your Immich server'
     placeholder: 'https://immich.example.com'
     help_text: 'Please include http:// or https://'
+  - keyname: api_key
+    name: 'Immich API Key'
+    field_type: text
+    description: 'API key for your Immich server'
+    placeholder: 'Your Immich API key'
+    help_text: 'Create one in Immich: Account Settings > API Keys'
   - keyname: album_id
     name: 'Album ID'
     field_type: text
     description: 'Optional: restrict photos to this album'
-    placeholder: 'Leave empty for your whole library'
-    help_text: 'Find it in the Immich web UI or via GET /api/albums'
+    placeholder: '[]'
+    help_text: 'JSON array of album UUIDs, e.g. ["<uuid>"]. Leave [] for the whole library'
   - keyname: person_id
     name: 'Person ID'
     field_type: text
     description: 'Optional: restrict photos to this person'
-    placeholder: 'Leave empty for your whole library'
-    help_text: 'Find it in the Immich web UI or via GET /api/people'
+    placeholder: '[]'
+    help_text: 'JSON array of person UUIDs, e.g. ["<uuid>"]. Leave [] for the whole library'
 name: 'Immich Photo of the Day'
-description: 'A random photo from your Immich library'
+description: 'Random photo from your Immich'
 refresh_interval: 1440
