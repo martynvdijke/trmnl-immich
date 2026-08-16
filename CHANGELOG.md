@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/martynvdijke/trmnl-immich/compare/v1.1.1...v1.1.2) (2026-08-16)
+
+
+### Bug Fixes
+
+* **trmnl:** harden transforms and stretch layouts ([f602654](https://github.com/martynvdijke/trmnl-immich/commit/f602654a1db0fa480d885930d8c060ca3b8b37ef))
+
 ## [1.1.1](https://github.com/martynvdijke/trmnl-immich/compare/v1.1.0...v1.1.1) (2026-08-16)
 
 # [1.1.0](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.3...v1.1.0) (2026-08-16)
