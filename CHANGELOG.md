@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.1...v1.0.2) (2026-08-16)
+
+
+### Bug Fixes
+
+* **ci:** docker build without go.sum ([59ee135](https://github.com/martynvdijke/trmnl-immich/commit/59ee135df06478da7c450cc92d08115387222e8b))
+
 ## [1.0.1](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.0...v1.0.1) (2026-08-15)
 
 
