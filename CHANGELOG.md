@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.3...v1.1.0) (2026-08-16)
+
+
+### Features
+
+* **trmnl:** merge immich-stats plugin into this repo ([3eabb78](https://github.com/martynvdijke/trmnl-immich/commit/3eabb78ae5a9bdccb5ab3a67994fba40bbf3dd01))
+
 ## [1.0.3](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.2...v1.0.3) (2026-08-16)
 
 
