@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.2...v1.0.3) (2026-08-16)
+
+
+### Bug Fixes
+
+* **trmnl:** pin plugin id 444098 ([d5fbce0](https://github.com/martynvdijke/trmnl-immich/commit/d5fbce0be01f2443c46e3015e39500841e2c514f))
+
 ## [1.0.2](https://github.com/martynvdijke/trmnl-immich/compare/v1.0.1...v1.0.2) (2026-08-16)
 
 
